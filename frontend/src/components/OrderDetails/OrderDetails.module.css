@@ -1,0 +1,74 @@
+.orderForm {
+    display: grid;
+    width: 548px;
+    height: 730px;
+    padding: 32px;
+    align-items: flex-start;
+    gap: 32px;
+
+    border-radius: 12px;
+    background: #F1F3F4;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text>h2,
+.totalPrice>h2 {
+    color: #8B8B8B;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.form{
+    display: grid;
+    gap: 16px;
+}
+
+.form>input,
+.form>button{
+    width: auto;
+}
+
+.totalPrice>h1{
+    font-size: 64px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .orderForm {
+        width: auto;
+    }
+
+    .totalPrice>h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .orderForm {
+        height: auto;
+    }
+
+    .totalPrice{
+        display: flex;
+    }
+
+    .form{
+        width: none;
+        justify-content: center;
+    }
+
+    .form>input{
+        width: auto;
+    }
+
+    .form>button{
+        width: auto;
+    }
+
+}
+

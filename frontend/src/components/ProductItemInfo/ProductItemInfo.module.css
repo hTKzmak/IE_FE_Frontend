@@ -1,0 +1,136 @@
+.product {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productInfo {
+    display: flex;
+    width: 548px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.productInfo>h2 {
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #282828;
+}
+
+.productInfo>p {
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #282828;
+}
+
+.price,
+.ProductAddToCartButton {
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+}
+
+.itemImage {
+    border-radius: 12px;
+    width: 50%;
+}
+
+.itemCount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.itemCount>button {
+    display: flex;
+    width: 58px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    border: 1px solid #DDD;
+    background: none;
+}
+
+.itemCount>button:hover {
+    background: #DDD;
+}
+
+.itemCount>p {
+    display: flex;
+    width: 96px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+.forMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .productInfo {
+        align-items: center;
+    }
+
+    .itemImage {
+        display: none;
+    }
+
+    .forMobile {
+        display: contents;
+    }
+
+    .forMobile>img {
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .productInfo {
+        width: 300px;
+        align-items: center;
+    }
+
+    .forMobile>img {
+        border-radius: 12px;
+        width: 70%;
+        height: 70%;
+    }
+
+    .ProductAddToCartButton {
+        display: contents;
+    }
+}
+
+.salesMedia{
+    display: flex;
+    align-items: left;
+    gap: 10px;
+}
+
+.rebate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 63px;
+    height: 34px;
+
+    border-radius: 6px;
+    background: #393;
+    color: white;
+}

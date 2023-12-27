@@ -1,0 +1,34 @@
+.basketList{
+    display: grid;
+    align-content: baseline;
+    gap: 16px;
+}
+
+.basketInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.emptyBasket > h1 {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+    .basketInfo{
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .basketItem_list{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .emptyBasket {
+        text-align: center;
+    }
+}
+

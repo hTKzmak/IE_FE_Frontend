@@ -1,0 +1,17 @@
+.navigation {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    border: 2px solid #DDD;
+    background: #F1F3F4;
+
+    color: #8B8B8B;
+    height: fit-content;
+}
+
+.navigation:active {
+    color: #282828;
+}

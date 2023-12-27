@@ -1,0 +1,65 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.form>form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form>label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form>label>input {
+    width: 36px;
+    height: 36px;
+}
+
+.select {
+    display: flex;
+    width: 200px;
+    padding: 8px 8px 8px 16px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px;
+    border: 1px solid #DDD;
+    background: none;
+}
+
+.inputForm {
+    display: flex;
+    width: 112px;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 6px;
+    border: 1px solid #DDD;
+
+    color: black;
+
+    font-size: 16px;
+
+    appearance: none;
+}
+
+.checkbox {
+    accent-color: #393;
+}
+
+
+@media screen and (max-width: 930px) {
+    .form {
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+    }
+}
