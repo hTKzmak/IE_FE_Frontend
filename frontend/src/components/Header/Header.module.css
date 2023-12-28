@@ -24,11 +24,6 @@ li {
 a {
     color: rgba(40, 40, 40, 1);
     text-decoration: none;
-    transition: 0.3s;
-}
-
-ul>a:hover {
-    color: #393;
 }
 
 .forMobile {
@@ -43,7 +38,7 @@ ul>a:hover {
     .forMobile {
         display: flex;
         align-items: center;
-        
+
         width: 50px;
         height: 50px;
 
