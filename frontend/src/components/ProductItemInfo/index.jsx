@@ -8,15 +8,21 @@ import { addNewItemAction } from "../../store/cartReducer"
 import Button from "../UI/Button"
 import CountChanger from "../UI/CountChanger"
 
+import {BASE_URL} from '../../index'
+
 function ProductItemInfo() {
 
-    const BASE_URL = 'http://localhost:3333/'
+    // const BASE_URL = 'http://localhost:3333/'
     const { products } = useSelector(store => store.productList)
     const dispatch = useDispatch()
     const location = useLocation()
     const { id } = useParams()
 
     const cart = useSelector(store => store.cartList)
+
+    // количество товаров и итоговая сумма:
+    const basketValue = localStorage.getItem('Basket');
+    let basketObj = JSON.parse(basketValue);
 
     const [counter, setCounter] = useState(1)
 

@@ -4,8 +4,12 @@ import { ReactComponent as Basket } from "./icons/basketEmpty.svg"
 import { ReactComponent as Menu } from "./icons/menu.svg"
 
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Header({ active, setActive }) {
+
+    const cart = useSelector(store => store.cartList)
+    const basketLength = cart.length
 
     return (
         <header>
@@ -33,6 +37,7 @@ function Header({ active, setActive }) {
             </nav>
             <div className="iefe-cart">
                 <Link to={'/basket'}>
+                    {basketLength > 0 && <div className="cart">{cart.reduce((total, item) => total + item.count , 0)}</div>}
                     <Basket />
                 </Link>
             </div>

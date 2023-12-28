@@ -23,9 +23,45 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: 500;
+}
+
+.discountPrice {
+    font-size: 20px;
+    font-weight: 500;
 
     text-decoration: line-through;
     color: rgba(139, 139, 139, 1);
+}
+
+/* icon to show products count */
+
+.cart {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    margin: -5px;
+    padding: 10px;
+    font-size: 15px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+    background: #393;
+    color: white;
+}
+
+.textAndBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textAndBtn>h1 {
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .section {
@@ -50,6 +86,16 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+/* линия для заголовков в HomePage and BasketPage */
+
+.line {
+    border-top: 2px solid black;
+    align-self: center;
+    flex-grow: 1;
+    border-color: #DDD;
+    margin-left: 32px;
+}
+
 /* для меню */
 
 .menu {
@@ -65,4 +111,114 @@ input[type=number] {
 
 .menu.active {
     transform: translateY(0);
+}
+
+/* для стилизации btn_banner */
+
+.dicountForm,
+.orderForm {
+    padding: 16px 32px;
+    width: 452px;
+
+    outline: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dicountForm {
+    background: none;
+    border: 1px solid #FFF;
+    color: rgba(255, 255, 255, 1);
+}
+
+.orderForm {
+    border: 1px solid #DDD;
+    background: #FFF;
+    color: #8B8B8B;
+}
+
+.discountBtn,
+.orderBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    width: 516px;
+    padding: 16px 32px;
+
+    border-radius: 6px;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.discountBtn {
+    color: #282828;
+    background: #FFF;
+
+}
+
+.orderBtn {
+    color: #FFF;
+    background: #393;
+}
+
+.discountBtn:hover,
+.orderBtn:hover {
+    color: #FFF;
+    background: #282828;
+}
+
+.discountBtn:active {
+    color: #393;
+    background: white;
+    border: none;
+}
+
+.orderBtn:active {
+    color: #282828;
+    background: #FFF;
+    border: 2px solid #282828;
+}
+
+.discountBtn:disabled {
+    color: #393;
+    border: none;
+    background: #FFF;
+    cursor: no-drop;
+}
+
+/* Media запрос */
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .section>h1,
+    .textAndBtn>h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .textAndBtn {
+        display: contents;
+    }
+
+    .textAndBtn>a {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+
 }
